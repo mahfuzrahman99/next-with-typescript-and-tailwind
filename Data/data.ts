@@ -1,3 +1,4 @@
+
 export const BaseInfo = {
     name: "Sajal",
     position: "Full Stack Web Developer",
@@ -16,7 +17,14 @@ export const BaseInfo = {
     website: "100+",
   };
   
-  export const servicesData = [
+  export interface Service {
+    id: number;
+    icon: string;
+    title: string;
+    description: string;
+  }
+  
+  export const servicesData: Service[] = [
     {
       id: 1,
       title: " Web Applications",
@@ -70,8 +78,15 @@ export const BaseInfo = {
       icon: "/images/s8.png",
     },
   ];
+
+
+  interface Project {
+    id: number;
+    image: string;
+    url: string;
+  }
   
-  export const projectData = [
+  export const projectData: Project[] = [
     {
       id: 1,
       image: "/images/p1.png",

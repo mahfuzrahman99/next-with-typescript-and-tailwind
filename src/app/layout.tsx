@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
+import ResponsiveNev from "./components/Home/Navbar/ResponsiveNev";
 
 const fontSora = Sora({
   weight: ["100","200","300","400","500","600","700","800",],
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${fontSora.className}`}
       >
+        <ResponsiveNev />
         {children}
       </body>
     </html>
